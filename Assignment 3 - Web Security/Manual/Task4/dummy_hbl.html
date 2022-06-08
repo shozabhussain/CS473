@@ -1,0 +1,90 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Welcome to HBL</title>    
+    <style>
+        body  
+        {  
+            margin: 0;  
+            padding: 0;  
+            background-color:#e6ffe6; 
+            font-family: 'Arial';
+            z-index: 1;
+        }  
+        .transaction{  
+            width: 382px;  
+            overflow: hidden;  
+            margin: auto;  
+            margin: 20 0 0 450px;  
+            padding: 80px;  
+            background: #23463f;  
+            border-radius: 15px ;  
+                
+        }  
+
+        h2{  
+            text-align: center;  
+            color: #23463f;
+            font-size:40px;  
+            padding: 20px;  
+        }  
+        label{  
+            color: #ffffff;  
+            font-size: 17px;  
+        }  
+        #Amount{  
+            width: 300px;  
+            height: 30px;  
+            border: none;  
+            border-radius: 3px;  
+            padding-left: 8px;  
+        }  
+        #Pin{  
+            width: 300px;  
+            height: 30px;  
+            border: none;  
+            border-radius: 3px;  
+            padding-left: 8px;  
+            
+        }  
+        #proceed{  
+            width: 300px;  
+            height: 40px; 
+            font-size:30px; 
+            border: none;  
+            border-radius: 17px;  
+            padding-left: 7px;
+            color: green;   
+        }  
+        span{  
+            color: white;  
+            font-size: 17px;  
+        }  
+        a{  
+            float: right;  
+            background-color: grey;  
+        } 
+    </style>
+    
+</head>    
+<body>    
+    <h2>HBL Bank Transaction</h2><br>    
+    <div class="transaction">   
+    <form id="transaction" method="get" action="transaction.php">    
+        <label><b>Amount     <br>
+        </b>    
+        </label>    
+        <input type="text" name="Amount" id="Amount" placeholder="Amount">    
+        <br><br>    
+        <label><b>Pin  <br>   
+        </b>    
+        </label>    
+        <input type="password" name="Pin" id="Pin" placeholder='xxx'>
+        <br><br>
+        <button  type="button" onclick="alert('Successful Transaction! \nYour bank account has no more money left (: ')" name="proceed" id="proceed">Proceed</button>      
+        <br><br>
+               
+    </form>     
+</div>
+</body>    
+</html>
